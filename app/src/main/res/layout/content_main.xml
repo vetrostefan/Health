@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="de.programmierenlernenhq.health.MainActivity"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/suche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:hint="Patient"/>
+
+        <Button
+            android:id="@+id/suchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="suche"
+            android:text="Patienten Suchen"
+
+            style="?android:textAppearanceSmall"
+            />
+
+    <Button
+        android:id="@+id/patButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="nextActivity"
+        android:text="Alle Patienten"
+
+        style="?android:textAppearanceSmall"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/paterstellenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="patSuche"
+        android:text="Trainingsplan erstellen"
+
+
+        style="?android:textAppearanceSmall"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Textfile erzeugen"
+            android:id="@+id/txt"
+            style="?android:textAppearanceSmall"
+            />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Daten Senden"
+
+
+            style="?android:textAppearanceSmall" />
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
